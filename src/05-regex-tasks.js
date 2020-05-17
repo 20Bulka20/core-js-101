@@ -32,6 +32,11 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
+  // const regex2 = /\b[0-9a-f]{8}\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\b[0-9a-f]{12}\b/;
+  // return regex2;
+  // const regexp1 = new RegExp('[a-fA-F0-9]{8}-[a-fA-F0-9]
+  // {4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}');
+  // return regexp1;
   throw new Error('Not implemented');
 }
 

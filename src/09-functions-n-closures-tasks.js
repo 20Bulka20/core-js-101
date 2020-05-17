@@ -23,8 +23,10 @@
  *   getComposition(Math.sin, Math.asin)(x) => Math.sin(Math.asin(x))
  *
  */
-function getComposition(/* f, g */) {
-  throw new Error('Not implemented');
+function getComposition(...args) {
+  if (args.length > 0) {
+    return args.reduceRight((prev, curr) => (...a) => curr(prev(...a)));
+  } return (...a) => (a)[0];
 }
 
 
@@ -45,6 +47,15 @@ function getComposition(/* f, g */) {
  *
  */
 function getPowerFunction(/* exponent */) {
+  // let sum = exponent;
+  // function a(b) {
+  //   sum **= b;
+  //   return a;
+  // }
+  // a.toString = function () {
+  //   return sum;
+  // };
+  // return a;
   throw new Error('Not implemented');
 }
 
